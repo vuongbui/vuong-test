@@ -1,3 +1,17 @@
 {
   "cmd": "pip install --user tox && tox"
+},
+{
+  branches: {
+    master: true,
+    develop: {
+      build: true,
+      notifications: {
+        slack: {
+          channel: '#dev'
+        }
+      }
+    }
+  }
 }
+
